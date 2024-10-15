@@ -4,13 +4,13 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = ClapTrap.cpp \
 	main.cpp \
-	ScavTrap.cpp
+	FragTrap.cpp
 
 OBJ_DIR = obj
 
 OBJS = $(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
-NAME = scavtrap
+NAME = fragtrap
 
 $(OBJ_DIR)/%.o: %.cpp
 	mkdir -p $(OBJ_DIR)

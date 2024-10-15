@@ -10,7 +10,7 @@ ClapTrap::ClapTrap(void) : _name("default")
 
 ClapTrap::ClapTrap(const ClapTrap& other) : _name(other._name)
 {
-	std::cout << "Copy ClapTrap constuctor called" << std::endl;
+	std::cout << "Copy ClapTrap " << _name << " constuctor called" << std::endl;
 	_hp = other._hp;
 	_energy = other._energy;
 	_ad = other._ad;
@@ -18,7 +18,7 @@ ClapTrap::ClapTrap(const ClapTrap& other) : _name(other._name)
 
 ClapTrap::ClapTrap(std::string name) : _name(name)
 {
-	std::cout << "ClapTrap constuctor called" << std::endl;
+	std::cout << "ClapTrap " << _name << " constuctor called" << std::endl;
 	_hp = 10;
 	_energy = 10;
 	_ad = 0;
@@ -26,13 +26,13 @@ ClapTrap::ClapTrap(std::string name) : _name(name)
 
 ClapTrap&	ClapTrap::operator=(const ClapTrap& other)
 {
-	std::cout << "Copy operator ClapTrap constuctor called" << std::endl;
 	if (this != &other)
 	{
 		this->_name = other._name;
 		this->_energy = other._energy;
 		this->_ad = other._ad;
 	}
+	std::cout << "Copy operator ClapTrap " << _name << " constuctor called" << std::endl;
 	return (*this);
 }
 
