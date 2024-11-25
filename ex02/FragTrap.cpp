@@ -41,7 +41,7 @@ FragTrap&	FragTrap::operator=(const FragTrap& other)
 	return (*this);
 }
 
-void	FragTrap::highFivesGuys(void)
+void	FragTrap::highFivesGuys(void) const
 {
 	std::cout << "High Fives Guys !!!" << std::endl;
 }

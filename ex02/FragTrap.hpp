@@ -13,7 +13,7 @@ class	FragTrap : public ClapTrap
 				~FragTrap(void);
 		FragTrap&	operator=(const FragTrap& other);
 
-		void		highFivesGuys(void);
+		void		highFivesGuys(void) const;
 };
 
 #endif
