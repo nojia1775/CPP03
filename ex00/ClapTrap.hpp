@@ -4,16 +4,17 @@
 class	ClapTrap
 {
 	private:
-		std::string	_name;
+		std::string		_name;
 		int			_hp;
 		int			_energy;
 		int			_ad;
 
 	public:
 					ClapTrap(void);
+					~ClapTrap(void);
+
 					ClapTrap(const ClapTrap& other);
 					ClapTrap(std::string name);
-					~ClapTrap(void);
 		ClapTrap&		operator=(const ClapTrap& other);
 
 		void			attack(const std::string& target);
