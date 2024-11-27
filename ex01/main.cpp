@@ -6,6 +6,7 @@ int	main(void)
 
 	a.attack("target");
 	a.guardGate();
+	a.guardGate();
 	ScavTrap b("noah");
 	ScavTrap c = b;
 	b.attack("moi");
